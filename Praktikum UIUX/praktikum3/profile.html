@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Profile - Noval</title>
+    <style>
+        /* CSS dasar untuk membentuk layout sesuai Gambar 4 di modul */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #f1c40f; padding: 20px; text-align: center; font-weight: bold;}
+        nav { background-color: #a2d149; padding: 10px; text-align: center; }
+        .container { display: flex; margin: 10px; gap: 10px;}
+        article { flex: 3; background-color: #f9cb8f; padding: 20px; }
+        aside { flex: 1; background-color: #1ccbbd; padding: 3%; }
+        section { background-color: #fce28b; margin-bottom: 15px; padding: 15px; border: 1px solid #d4a76a; }
+        footer { background-color: #f1c40f; padding: 15px; text-align: center; clear: both; }
+        
+        /* CSS untuk styling profil */
+        .profile-header { display: flex; gap: 20px; margin-bottom: 20px; }
+        .profile-img { width: 150px; height: 150px; background-color: #fff; border: 2px solid #333; display: flex; justify-content: center; align-items: center; }
+        .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .gallery-box { background-color: #ddd; width:150px ; height: 100px; border: 1px solid #555; display: flex; justify-content: center; align-items: center; font-size: 12px;}
+    </style>
+</head>
+<body>
+
+    <!-- a. Header: Logo dan Nama Web -->
+    <header>
+        <h1>Web Profile - Muhammad Noval Reza Ramadhan</h1>
+    </header>
+
+    <!-- b. Nav: Berisi Menu -->        
+    <nav>
+        <a href="home.html">Home</a>  | <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <!-- c. Article: Konten artikel yang terdiri atas section-section -->
+        <article>
+            <div class="profile-header">
+                <!-- a. Foto diri -->
+                <div class="profile-img">
+                    <img src="noval.jpg" alt="Foto Profil Noval" width="150" height="150">
+                </div>
+                <!-- b. Biodata lengkap -->
+                <div>
+                    <h2>Muhammad Noval Reza Ramadhan</h2>
+                    <p><strong>Pendidikan:</strong> Sekolah Tinggi Teknologi Terpadu Nurul Fikri</p>
+                    <p><strong>Program Studi:</strong> Teknik Informatika (Kelas Siang)</p>
+                    <p><strong>Tanggal Lahir:</strong> 5 Oktober 2007</p>
+                    <p><strong>Domisili:</strong> Jakarta</p>
+                </div>
+            </div>
+
+            <!-- c. Paragraph berisi deskripsi diri (2 paragraph) -->
+           <section>
+    <h3>Tentang Saya</h3>
+    <p>Halo, perkenalkan nama saya Muhammad Noval Reza Ramadhan. Saya saat ini adalah mahasiswa aktif di program studi Teknik Informatika, Sekolah Tinggi Teknologi Terpadu Nurul Fikri. Sebelumnya, saya merupakan lulusan SMK Respati 1 Jakarta dengan jurusan Teknik Komputer dan Jaringan. Fokus akademik dan karir saya saat ini berada di bidang cybersecurity, infrastruktur jaringan, serta administrasi sistem, yang sering saya asah melalui konfigurasi home server berbasis Linux Ubuntu dan latihan simulasi keamanan siber.</p>
+    
+    <p>Di luar dunia IT, saya memiliki ketertarikan besar pada dunia otomotif dan Teknologi. Saya kerap melakukan perawatan CVT mandiri pada motor, Serta Saya mampu Melakukan Perawatan Laptop . Untuk hiburan, saya senang memelihara ikan cupang dan hamster, serta bermain game seperti Valorant, Mobile Legends, dan game balap lintas platform.</p>
+</section>
+            <!-- d & e. Konten multimedia video dan link download -->
+            <section>
+                <h3>Multimedia & Attachments</h3>
+                
+                <h4>Video Aktifitas Servis Laptop</h4>
+                <video width="100%" height="240" controls>
+                    <source src="servis laptop.mp4" type="video/mp4">
+                </video>
+
+                <h4>Unduhan Berkas (Attachments)</h4>
+                <ul>
+                    <li><a href="../praktikum3/pizza/formulir pizza.html" download>Download Tugas Praktikum2 (.pdf)</a></li>
+                    <li><a href="../tugas-UI-UX-main/VScode tester/praktek" download>Download Tugas Praktikum1 (.pdf)</a></li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- d. Aside: Di isi dengan konten multimedia foto -->
+        <aside>
+            <h3>Koleksi Foto</h3>
+            <p>Galeri kegiatan:</p>
+            <div class="gallery">
+                <div class="gallery-box"><img src="osjur.jpg" alt="Osjur" width="100%" height="100%"></div>
+                <div class="gallery-box"><img src="bubu my pet.jpg" alt="Hewan Peliharaan" width="100%" height="100%"></div>
+                <div class="gallery-box"><img src="root hp.jpg" alt="Root HP" width="100%" height="100%"></div>
+                <div class="gallery-box"><img src="server mini.jpg" alt="Home Server" width="100%" height="100%"></div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>2026 Layout by Noval - Teknik Informatika</p>
+    </footer>
+
+</body>
+</html>

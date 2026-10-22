@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang - Praktikum Mandiri</title>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Generate Link</a> |
+        <a href="#">Transaction History</a> |
+        <a href="#">Policy</a> |
+        <a href="#">Logout</a>
+    </nav>
+
+    <hr>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <table border="0" cellpadding="5">
+            <tr>
+                <!-- Kolom Gambar -->
+                <td valign="top" width="200">
+                    <img src="#" alt="Gambar Barang Placeholder" width="150" height="150" style="border: 1px solid black; display: block; margin-bottom: 10px;">
+                    <input type="file" name="upload_picture" id="upload_picture">
+                </td>
+
+                <!-- Kolom Form Utama -->
+                <td valign="top">
+                    <table border="0" cellpadding="5">
+                        <tr>
+                            <td><label for="title_here">Title Here</label></td>
+                            <td><input type="text" name="title_here" id="title_here" value="MacBook Air £800" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><label for="description">Description</label></td>
+                            <td>
+                                <textarea name="description" id="description" rows="4" cols="42">Year: 2009
+Model:
+Condition: Mint</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="account_number">Account Number</label></td>
+                            <td><input type="text" name="account_number" id="account_number" value="123-456-789-0" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bank">Bank</label></td>
+                            <td>
+                                <select name="bank" id="bank">
+                                    <option value="HSBC">HSBC</option>
+                                    <!-- Tambahkan opsi bank lain jika diperlukan -->
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="account_holder">Account Holder</label></td>
+                            <td><input type="text" name="account_holder" id="account_holder" value="Name Here" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><label for="transaction">Transaction:</label></td>
+                            <td>
+                                <input type="number" name="transaction" id="transaction" value="1" min="1" max="10">
+                                <br>
+                                <small><em>* If the transaction is for 3 person, choose 3 from the drop-down list</em></small>
+                                <br><br>
+                                <input type="checkbox" name="send_mobile" id="send_mobile" checked>
+                                <label for="send_mobile">Send to Mobile Phone</label><br>
+                                <input type="checkbox" name="send_email" id="send_email" checked>
+                                <label for="send_email">Send to Email</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="send_to_mobile_phone">Send to Mobile Phone</label></td>
+                            <td><input type="text" name="send_to_mobile_phone" id="send_to_mobile_phone" value="1234567890, 1234567891" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="send_to_email">Send to Email</label></td>
+                            <td><input type="text" name="send_to_email" id="send_to_email" value="mhmmz@aston.ac.uk, fyx_06@yahoo.com" size="40"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><br><input type="submit" value="Generate Valid Link"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

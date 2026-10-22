@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Barang</title>
+    <style>
+        .upload-btn { border: 2px solid black; padding: 5px 10px; background: #eee; cursor: pointer; display: block; width: 110px; text-align: center; font-size: 12px;}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a> |
+        <a href="#">Generate Link</a> |
+        <a href="#">Transaction History</a> |
+        <a href="#">Policy</a> |
+        <a href="#">Logout</a>
+    </div>
+
+    <div class="container">
+        <div>
+            <div class="image-placeholder"></div>
+            <button class="upload-btn">Upload Picture</button>
+        </div>
+        
+        <form>
+            <table class="form-table">
+                <tr>
+                    <td>Title Here</td>
+                    <td><input type="text" value="MacBook Air E800"></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>
+                        <textarea rows="4" style="resize: none;">Year : 2009&#13;&#10;Model&#13;&#10;Condition : Mint</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td><input type="text" value="123-456-789-0"></td>
+                </tr>
+                <tr>
+                    <td>Bank</td>
+                    <td>
+                        <select>
+                            <option>HSBC</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Account Holder</td>
+                    <td><input type="text" value="Name Here"></td>
+                </tr>
+                <tr>
+                    <td>Transaction</td>
+                    <td>
+                        <select style="width: 50px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <br>
+                        <small style="font-size: 11px;">* If the transaction is for 3 person, choose 3 from the drop-down list</small>
+                        <br><br>
+                        <label><input type="checkbox" checked> Send to Mobile Phone</label><br>
+                        <label><input type="checkbox" checked> Send to Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Send to Mobile Phone</td>
+                    <td><input type="text" value="1234567890, 1234567891"></td>
+                </tr>
+                <tr>
+                    <td>Send to Email</td>
+                    <td><input type="text" value="mhmm2g13@aston.ac.uk, fyx_06@yahoo.com"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" class="btn-green">Generate Web Link</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

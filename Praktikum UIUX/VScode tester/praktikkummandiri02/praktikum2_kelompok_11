@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+    <!-- Navbar menggunakan tabel untuk border -->
+    <table border="2" width="100%" cellpadding="10" cellspacing="0" style="margin-bottom: 20px;">
+        <tr>
+            <td align="center">
+                <a href="#">Home</a> &nbsp;|&nbsp;
+                <a href="#">Generate Link</a> &nbsp;|&nbsp;
+                <a href="#">Transaction History</a> &nbsp;|&nbsp;
+                <a href="#">Policy</a> &nbsp;|&nbsp;
+                <a href="#">Logout</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Menggunakan tabel untuk mensejajarkan bagian kiri (gambar) dan kanan (form) -->
+    <table border="0" cellpadding="10">
+        <tr valign="top">
+            <!-- Kolom Kiri: Gambar dan Tombol Upload -->
+            <td width="180">
+                <!-- Placeholder Gambar (menggunakan tabel agar mirip kotak dengan border) -->
+                <table border="2" width="150" height="150" cellpadding="0" cellspacing="0" style="margin-bottom: 10px;">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <!-- X di dalam kotak (menggunakan teks karena murni HTML) -->
+                            <span style="font-size: 80px; color: black; line-height: 1;">&times;</span>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Tombol Upload (menggunakan tabel sebagai border) -->
+                <table border="2" width="110" bgcolor="#eeeeee" cellpadding="5" cellspacing="0">
+                    <tr>
+                        <td align="center" style="font-size: 12px; cursor: pointer;">Upload Picture</td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- Kolom Kanan: Form -->
+            <td>
+                <!-- Tag form ditambahkan action untuk ngelink ke halaman selanjutnya -->
+                <form action="hasil pemesanan.html">
+                    <table border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td valign="top">Title Here</td>
+                            <td><input type="text" value="MacBook Air E800" size="40" style="border: 1px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Description</td>
+                            <td>
+                                <textarea rows="4" cols="42" style="border: 1px solid black; resize: none;">Year : 2009&#13;&#10;Model&#13;&#10;Condition : Mint</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Account Number</td>
+                            <td><input type="text" value="123-456-789-0" size="40" style="border: 1px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Bank</td>
+                            <td>
+                                <select style="border: 1px solid black; width: 305px;">
+                                    <option>HSBC</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Account Holder</td>
+                            <td><input type="text" value="Name Here" size="40" style="border: 1px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Transaction</td>
+                            <td>
+                                <select style="border: 1px solid black; width: 50px;">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <br>
+                                <font size="1">* If the transaction is for 3 person, choose 3 from the drop-down list</font>
+                                <br><br>
+                                <input type="checkbox" checked> <label>Send to Mobile Phone</label><br>
+                                <input type="checkbox" checked> <label>Send to Email</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Send to Mobile Phone</td>
+                            <td><input type="text" value="1234567890, 1234567891" size="40" style="border: 1px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Send to Email</td>
+                            <td><input type="text" value="mhmm2g13@aston.ac.uk, fyx_06@yahoo.com" size="40" style="border: 1px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-top: 15px;">
+                                <!-- Tombol hijau menggunakan style inline minimal -->
+                                <button type="submit" style="background-color: #28a745; color: white; padding: 8px 15px; border: 2px solid black; font-weight: bold; cursor: pointer;">Generate Web Link</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
